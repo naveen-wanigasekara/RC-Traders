@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <radialGradient id="bgD" cx="30%" cy="10%" r="100%">
+      <stop offset="0%" stop-color="#221d12"/>
+      <stop offset="60%" stop-color="#131210"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="goldD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0bf4f"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="400" fill="url(#bgD)"/>
+
+  <!-- road -->
+  <line x1="0" y1="330" x2="900" y2="330" stroke="#c9a227" stroke-opacity="0.3" stroke-width="2"/>
+  <g stroke="#c9a227" stroke-opacity="0.35" stroke-width="4" stroke-dasharray="26 20">
+    <line x1="0" y1="355" x2="900" y2="355"/>
+  </g>
+
+  <!-- motion lines -->
+  <g stroke="#c9a227" stroke-opacity="0.4" stroke-width="3">
+    <line x1="40" y1="180" x2="130" y2="180"/>
+    <line x1="30" y1="210" x2="140" y2="210"/>
+    <line x1="50" y1="240" x2="120" y2="240"/>
+  </g>
+
+  <!-- delivery van -->
+  <g transform="translate(170,90)">
+    <!-- cab + body -->
+    <path d="M0 160 L0 90 C 0 78 10 68 22 68 L 90 68 L 140 20 C 148 12 160 8 172 8 L 470 8
+             C 486 8 500 20 500 38 L 500 160 Z"
+          fill="none" stroke="url(#goldD)" stroke-width="5"/>
+    <!-- window -->
+    <path d="M100 68 L145 30 C 150 25 158 22 166 22 L 220 22 L 220 68 Z" fill="none" stroke="#e0bf4f" stroke-width="2.5"/>
+    <!-- door line -->
+    <line x1="0" y1="90" x2="500" y2="90" stroke="#c9a227" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="240" y1="22" x2="240" y2="160" stroke="#c9a227" stroke-opacity="0.4" stroke-width="1.5"/>
+
+    <!-- RC brand box on side panel -->
+    <rect x="290" y="55" width="170" height="70" rx="6" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <text x="375" y="98" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="26" letter-spacing="2" fill="url(#goldD)" text-anchor="middle">RC</text>
+
+    <!-- wheels -->
+    <circle cx="90" cy="170" r="34" fill="#0b0b0c" stroke="url(#goldD)" stroke-width="5"/>
+    <circle cx="90" cy="170" r="12" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <circle cx="420" cy="170" r="34" fill="#0b0b0c" stroke="url(#goldD)" stroke-width="5"/>
+    <circle cx="420" cy="170" r="12" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+
+    <!-- headlamp -->
+    <ellipse cx="14" cy="120" rx="10" ry="16" fill="#f4d876" fill-opacity="0.7"/>
+  </g>
+
+  <!-- floating part icon (being delivered) -->
+  <g transform="translate(700,110)">
+    <ellipse cx="0" cy="0" rx="58" ry="42" fill="none" stroke="url(#goldD)" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="none" stroke="#f4d876" stroke-width="2"/>
+    <circle cx="0" cy="0" r="7" fill="#f4d876"/>
+    <path d="M-58 0 C -80 -20 -80 -50 -58 -70" fill="none" stroke="#c9a227" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="3 6"/>
+  </g>
+
+  <!-- RC badge -->
+  <g transform="translate(820,320)">
+    <circle r="30" fill="#0b0b0c" stroke="url(#goldD)" stroke-width="2"/>
+    <circle r="24" fill="none" stroke="#c9a227" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+    <text x="0" y="7" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="17" fill="url(#goldD)" text-anchor="middle">RC</text>
+  </g>
+</svg>

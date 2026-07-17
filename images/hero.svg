@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <radialGradient id="bg" cx="72%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#241f14"/>
+      <stop offset="55%" stop-color="#14130f"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0bf4f"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4d876" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#c9a227" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#c9a227" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <mask id="gridMask">
+      <radialGradient id="gridFade" cx="70%" cy="25%" r="60%">
+        <stop offset="0%" stop-color="#fff"/>
+        <stop offset="100%" stop-color="#000"/>
+      </radialGradient>
+      <rect width="800" height="1000" fill="url(#gridFade)"/>
+    </mask>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#grid)" mask="url(#gridMask)"/>
+
+  <!-- dashed orbit ring, echoes the RC badge motif -->
+  <circle cx="565" cy="300" r="150" fill="none" stroke="#c9a227" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="4 10"/>
+
+  <!-- import route: JP / AU -> LK -->
+  <g font-family="Poppins, Arial, sans-serif" font-weight="700" fill="#c9a227" fill-opacity="0.8">
+    <circle cx="120" cy="150" r="4" fill="#c9a227"/>
+    <text x="132" y="155" font-size="15" letter-spacing="2">JAPAN</text>
+    <circle cx="140" cy="230" r="4" fill="#c9a227"/>
+    <text x="152" y="235" font-size="15" letter-spacing="2">AUSTRALIA</text>
+    <path d="M124 150 C 260 190, 340 260, 400 420" fill="none" stroke="#c9a227" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="2 8"/>
+    <path d="M144 232 C 260 300, 340 340, 400 430" fill="none" stroke="#c9a227" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="2 8"/>
+    <circle cx="400" cy="430" r="5" fill="#e0bf4f"/>
+    <text x="412" y="435" font-size="15" letter-spacing="2">SRI LANKA</text>
+  </g>
+
+  <!-- car front 3/4 illustration -->
+  <g transform="translate(80,480)">
+    <ellipse cx="330" cy="430" rx="290" ry="26" fill="#000" opacity="0.45"/>
+
+    <!-- body -->
+    <path d="M20 300
+             C 20 230, 90 190, 170 178
+             L 300 160
+             C 420 150, 520 165, 590 210
+             C 630 235, 645 260, 648 300
+             L 648 360
+             C 648 380, 630 392, 608 392
+             L 60 392
+             C 38 392, 20 380, 20 360 Z"
+          fill="none" stroke="url(#gold)" stroke-width="4"/>
+
+    <!-- windshield -->
+    <path d="M200 200 C 260 178, 400 172, 470 200 L 500 250 L 190 250 Z" fill="none" stroke="url(#gold)" stroke-width="2.5" stroke-opacity="0.8"/>
+
+    <!-- hood line -->
+    <path d="M20 300 C 120 275, 260 268, 400 268 C 470 268, 560 278, 648 300" fill="none" stroke="#c9a227" stroke-width="1.5" stroke-opacity="0.5"/>
+
+    <!-- grille -->
+    <rect x="40" y="310" width="90" height="46" rx="8" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+    <line x1="52" y1="322" x2="118" y2="322" stroke="#c9a227" stroke-width="2" stroke-opacity="0.7"/>
+    <line x1="52" y1="334" x2="118" y2="334" stroke="#c9a227" stroke-width="2" stroke-opacity="0.7"/>
+    <line x1="52" y1="346" x2="118" y2="346" stroke="#c9a227" stroke-width="2" stroke-opacity="0.7"/>
+
+    <!-- headlight, the hero focal point -->
+    <circle cx="150" cy="300" r="70" fill="url(#glow)"/>
+    <ellipse cx="150" cy="300" rx="46" ry="34" fill="#0b0b0c" stroke="url(#gold)" stroke-width="4"/>
+    <ellipse cx="150" cy="300" rx="26" ry="19" fill="none" stroke="#e0bf4f" stroke-width="2" stroke-opacity="0.85"/>
+    <circle cx="150" cy="300" r="8" fill="#f4d876"/>
+
+    <!-- bumper -->
+    <path d="M10 360 C 120 378, 540 378, 640 360" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- fog lamp -->
+    <circle cx="600" cy="352" r="16" fill="none" stroke="#c9a227" stroke-width="3"/>
+
+    <!-- wheel arch hint -->
+    <path d="M60 392 A 60 60 0 0 1 178 392" fill="none" stroke="#c9a227" stroke-width="2" stroke-opacity="0.4"/>
+    <path d="M470 392 A 60 60 0 0 1 588 392" fill="none" stroke="#c9a227" stroke-width="2" stroke-opacity="0.4"/>
+  </g>
+
+  <!-- RC badge, echoes footer/header mark -->
+  <g transform="translate(660,860)">
+    <circle r="42" fill="#0b0b0c" stroke="url(#gold)" stroke-width="2.5"/>
+    <circle r="34" fill="none" stroke="#c9a227" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+    <text x="0" y="10" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="26" fill="url(#gold)" text-anchor="middle">RC</text>
+  </g>
+</svg>

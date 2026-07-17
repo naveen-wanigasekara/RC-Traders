@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="bg2" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#221d12"/>
+      <stop offset="60%" stop-color="#131210"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="gold2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0bf4f"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a227" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg2)"/>
+
+  <!-- ceiling light beams -->
+  <polygon points="140,0 260,0 340,760 20,760" fill="url(#beam)"/>
+  <polygon points="420,0 540,0 620,760 300,760" fill="url(#beam)"/>
+  <polygon points="620,0 720,0 780,760 560,760" fill="url(#beam)"/>
+
+  <!-- floor line -->
+  <line x1="0" y1="700" x2="800" y2="700" stroke="#c9a227" stroke-opacity="0.25" stroke-width="2"/>
+  <line x1="0" y1="760" x2="800" y2="760" stroke="#c9a227" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- shelving unit 1 -->
+  <g transform="translate(60,260)">
+    <rect x="0" y="0" width="220" height="440" fill="none" stroke="url(#gold2)" stroke-width="3"/>
+    <line x1="0" y1="110" x2="220" y2="110" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="0" y1="220" x2="220" y2="220" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="0" y1="330" x2="220" y2="330" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <!-- boxes/parts on shelves -->
+    <rect x="16" y="30" width="70" height="60" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="110" y="24" width="90" height="70" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <ellipse cx="55" cy="170" rx="34" ry="24" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="120" y="145" width="80" height="55" rx="6" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="18" y="248" width="184" height="60" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <ellipse cx="60" cy="390" rx="40" ry="28" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="120" y="360" width="82" height="58" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+  </g>
+
+  <!-- shelving unit 2 -->
+  <g transform="translate(330,220)">
+    <rect x="0" y="0" width="240" height="480" fill="none" stroke="url(#gold2)" stroke-width="3"/>
+    <line x1="0" y1="120" x2="240" y2="120" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="0" y1="240" x2="240" y2="240" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="0" y1="360" x2="240" y2="360" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <!-- headlight motif -->
+    <ellipse cx="60" cy="60" rx="36" ry="26" fill="none" stroke="#e0bf4f" stroke-width="2.5"/>
+    <ellipse cx="60" cy="60" rx="18" ry="12" fill="none" stroke="#f4d876" stroke-width="1.5"/>
+    <rect x="130" y="30" width="90" height="62" rx="6" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="20" y="150" width="200" height="66" rx="6" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <ellipse cx="70" cy="300" rx="38" ry="26" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="140" y="272" width="80" height="56" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="24" y="392" width="192" height="60" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+  </g>
+
+  <!-- shelving unit 3 -->
+  <g transform="translate(620,300)">
+    <rect x="0" y="0" width="140" height="400" fill="none" stroke="url(#gold2)" stroke-width="3"/>
+    <line x1="0" y1="130" x2="140" y2="130" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="0" y1="260" x2="140" y2="260" stroke="#c9a227" stroke-width="2" stroke-opacity="0.6"/>
+    <rect x="16" y="30" width="108" height="70" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <ellipse cx="70" cy="195" rx="42" ry="26" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="16" y="285" width="108" height="86" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+  </g>
+
+  <!-- RC badge, top-left corner -->
+  <g transform="translate(70,70)">
+    <circle r="34" fill="#0b0b0c" stroke="url(#gold2)" stroke-width="2"/>
+    <circle r="27" fill="none" stroke="#c9a227" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+    <text x="0" y="8" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="20" fill="url(#gold2)" text-anchor="middle">RC</text>
+  </g>
+</svg>

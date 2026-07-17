@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <defs>
+    <radialGradient id="bgH" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#2a2410"/>
+      <stop offset="55%" stop-color="#141210"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="goldH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4d876"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+    <radialGradient id="glowH" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4d876" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#c9a227" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="700" height="700" fill="url(#bgH)"/>
+
+  <!-- light rays -->
+  <g stroke="#f4d876" stroke-opacity="0.25" stroke-width="3">
+    <line x1="350" y1="350" x2="650" y2="230"/>
+    <line x1="350" y1="350" x2="670" y2="330"/>
+    <line x1="350" y1="350" x2="660" y2="430"/>
+    <line x1="350" y1="350" x2="600" y2="510"/>
+  </g>
+
+  <circle cx="330" cy="350" r="220" fill="url(#glowH)"/>
+
+  <!-- headlight housing, close-up -->
+  <g transform="translate(80,140)">
+    <path d="M0 220 C 0 100 90 20 250 20 C 400 20 480 90 500 190 C 510 240 500 300 460 340
+             C 400 400 260 420 140 400 C 50 385 0 320 0 220 Z"
+          fill="#0b0b0c" stroke="url(#goldH)" stroke-width="6"/>
+
+    <!-- inner lens rings -->
+    <ellipse cx="220" cy="210" rx="150" ry="130" fill="none" stroke="#c9a227" stroke-opacity="0.7" stroke-width="3"/>
+    <ellipse cx="220" cy="210" rx="105" ry="90" fill="none" stroke="#e0bf4f" stroke-opacity="0.8" stroke-width="2.5"/>
+    <ellipse cx="220" cy="210" rx="60" ry="52" fill="none" stroke="#f4d876" stroke-width="2"/>
+
+    <!-- bulb core -->
+    <circle cx="220" cy="210" r="26" fill="#fff8e6"/>
+    <circle cx="220" cy="210" r="26" fill="url(#glowH)"/>
+
+    <!-- reflector facets -->
+    <g stroke="#c9a227" stroke-opacity="0.45" stroke-width="1.5">
+      <line x1="220" y1="80" x2="220" y2="340"/>
+      <line x1="90" y1="210" x2="350" y2="210"/>
+      <line x1="130" y1="100" x2="310" y2="320"/>
+      <line x1="310" y1="100" x2="130" y2="320"/>
+    </g>
+
+    <!-- turn signal accent lower corner -->
+    <ellipse cx="420" cy="300" rx="46" ry="34" fill="none" stroke="#e0bf4f" stroke-width="3"/>
+    <ellipse cx="420" cy="300" rx="24" ry="17" fill="none" stroke="#f4d876" stroke-width="2"/>
+  </g>
+
+  <!-- RC badge -->
+  <g transform="translate(590,600)">
+    <circle r="34" fill="#0b0b0c" stroke="url(#goldH)" stroke-width="2"/>
+    <circle r="27" fill="none" stroke="#c9a227" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+    <text x="0" y="8" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="20" fill="url(#goldH)" text-anchor="middle">RC</text>
+  </g>
+</svg>

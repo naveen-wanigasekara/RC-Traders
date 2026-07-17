@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 820">
+  <defs>
+    <radialGradient id="bgS" cx="50%" cy="15%" r="90%">
+      <stop offset="0%" stop-color="#221d12"/>
+      <stop offset="60%" stop-color="#131210"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="goldS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0bf4f"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="820" fill="url(#bgS)"/>
+
+  <!-- sky/backdrop dots -->
+  <g fill="#c9a227" fill-opacity="0.5">
+    <circle cx="80" cy="70" r="2"/><circle cx="180" cy="40" r="2"/><circle cx="760" cy="60" r="2"/>
+    <circle cx="820" cy="110" r="2"/><circle cx="60" cy="150" r="2"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="700" width="900" height="120" fill="#000" opacity="0.35"/>
+  <line x1="0" y1="700" x2="900" y2="700" stroke="#c9a227" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- building -->
+  <g>
+    <rect x="90" y="260" width="720" height="440" fill="none" stroke="url(#goldS)" stroke-width="4"/>
+    <!-- roofline -->
+    <polyline points="70,260 450,190 830,260" fill="none" stroke="url(#goldS)" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- fascia sign band -->
+    <rect x="110" y="290" width="680" height="90" fill="#0b0b0c" stroke="#c9a227" stroke-opacity="0.6" stroke-width="2"/>
+    <text x="450" y="335" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="34" letter-spacing="4" fill="url(#goldS)" text-anchor="middle">RC TRADERS</text>
+    <text x="450" y="362" font-family="Arial, sans-serif" font-weight="600" font-size="15" letter-spacing="6" fill="#c9a227" fill-opacity="0.8" text-anchor="middle">QUALITY GENUINE PARTS</text>
+
+    <!-- shutter door -->
+    <rect x="330" y="420" width="240" height="280" fill="none" stroke="#c9a227" stroke-width="3"/>
+    <g stroke="#c9a227" stroke-opacity="0.55" stroke-width="2">
+      <line x1="330" y1="450" x2="570" y2="450"/>
+      <line x1="330" y1="480" x2="570" y2="480"/>
+      <line x1="330" y1="510" x2="570" y2="510"/>
+      <line x1="330" y1="540" x2="570" y2="540"/>
+      <line x1="330" y1="570" x2="570" y2="570"/>
+      <line x1="330" y1="600" x2="570" y2="600"/>
+      <line x1="330" y1="630" x2="570" y2="630"/>
+      <line x1="330" y1="660" x2="570" y2="660"/>
+      <line x1="330" y1="690" x2="570" y2="690"/>
+    </g>
+
+    <!-- windows either side -->
+    <rect x="140" y="440" width="150" height="200" rx="4" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-opacity="0.8"/>
+    <line x1="215" y1="440" x2="215" y2="640" stroke="#c9a227" stroke-opacity="0.4" stroke-width="1.5"/>
+    <ellipse cx="178" cy="500" rx="26" ry="18" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <rect x="232" y="560" width="60" height="46" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+
+    <rect x="610" y="440" width="150" height="200" rx="4" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-opacity="0.8"/>
+    <line x1="685" y1="440" x2="685" y2="640" stroke="#c9a227" stroke-opacity="0.4" stroke-width="1.5"/>
+    <rect x="628" y="480" width="70" height="50" rx="4" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+    <ellipse cx="726" cy="580" rx="24" ry="17" fill="none" stroke="#e0bf4f" stroke-width="2"/>
+  </g>
+
+  <!-- parked car silhouette -->
+  <g transform="translate(20,650)">
+    <path d="M0 90 C 5 55 40 42 90 40 L 180 38 C 230 38 260 50 275 75 L 275 100 C 275 108 268 112 260 112 L 15 112 C 7 112 0 108 0 100 Z"
+          fill="none" stroke="url(#goldS)" stroke-width="3"/>
+    <circle cx="55" cy="112" r="16" fill="none" stroke="#c9a227" stroke-width="3"/>
+    <circle cx="220" cy="112" r="16" fill="none" stroke="#c9a227" stroke-width="3"/>
+    <ellipse cx="35" cy="72" rx="12" ry="9" fill="#f4d876" fill-opacity="0.7"/>
+  </g>
+
+  <!-- RC badge -->
+  <g transform="translate(450,80)">
+    <circle r="34" fill="#0b0b0c" stroke="url(#goldS)" stroke-width="2"/>
+    <circle r="27" fill="none" stroke="#c9a227" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+    <text x="0" y="8" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="20" fill="url(#goldS)" text-anchor="middle">RC</text>
+  </g>
+</svg>
